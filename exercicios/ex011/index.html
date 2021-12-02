@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Imagens pra varios dispositivos diferentes</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/"> <!--se for menos de mil ele abre a foto m ao inves da g e menos de 750 tipo celular abre a p A ORDEM IMPORTA O P PRIMEIRO E O G O DEFAULT-->
+        <img src="imagens/foto-p.png" alt="Imagens flexível">
+    </picture>
+
+    <H1>Reproduzindo Audios</H1>
+    <audio preload="metadata" controls>
+        <source srcset="fdsfdsfsd" type="audio/mpeg">
+        <source srcset="sfsdfds" type="audio/ogg">
+        <p>infelizmente seu navegador nao consegue reproduzir audio</p>
+    </audio>
+    <!--MP3 waV DGG wave por ultimo pq se evita é o mais pesado-->
+
+    <!--handbrake: software gratuito pra transformar formato de videos!-->
+    <h1>Videos</h1>
+    <p>este video esta hospedado no meu proprio servidor</p>
+    <video poster="imagens/thumbnail-video" controls autoplay loop>
+        <source srcset="" type="video/mp4">
+        <source srcset="" type="video/ogg">
+        <p>Seu navegador nao tem compatibilidade com reprodução de videos</p>
+    </video>
+    <!--esse jeito fica caro pois mto conumo de dado-->
+    <h1>inserindo videos do youtube</h1>
+    <!--só colar aqui o iframe que tem la no incorporar-->
+    <!--vai num video no youtube - compartilhar - incorporar. video seu ou livre de direitos autorais. m4v melhor-->
+    <!-- existem outros serviços de hospedagem de video, tipo o vimeo. no vimeo vc pode escolher deixar o video privado só pra assinantes por ex-->
+    
+</body>
+</html>

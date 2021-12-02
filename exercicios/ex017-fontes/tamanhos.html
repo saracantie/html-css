@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+            font-size: 0.8em;
+            /*Medidas Absolutas
+            cm mm in px pt pc 
+            (ruins de usar pois varia de dispositivo pra dispositivo)
+            
+            Medidas Relativas
+            em (relativo ao tamanho da letra m de uma fonte) 
+            ex (relativo ao tamanho da letra x)
+            rem (relativo ao root fonte do body)
+            vw (relativo ao viewport, largura de tela)
+            vh (idem viewport, só que altura de tela)
+            %
+
+            W3S RECOMENDA SÓ O USO DO PX E O USO DO EM
+
+            16px normalmente é um tamanho padrão/normal de fonte
+            16px Geralmente é igual a 1em
+
+            */
+            font-weight: 800;
+            /*font-weight: bold;*/
+            /*lighter normal bold bolder
+            a maioria das fontes tem tds esses pesos
+            ou vc coloca escala numerica
+            de 100 a 900
+            só que a maiori das fontes não tem tantas variações de peso assim*/
+            font-style: italic;/*normalmente o h1 já vem negritado por padrao, aí vc pode mudar pra bold*/
+            text-decoration: underline;
+
+            
+        }
+        /*SHORTHAND
+            vc configura todas essas de cima de uma unica vez
+            nessa ordem
+            font-style -> font-weight -> font size -> font-family*/
+        h1{ font: italic bolder 3m Times, sans-serif;
+
+            }
+            
+    </style>
+</head>
+<body>
+    <h1>Titulo Principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, pariatur velit! Aliquam sed quaerat alias delectus eum. Aliquid nesciunt earum veniam architecto suscipit sequi, aspernatur repellendus veritatis modi vitae! Laudantium?</p>
+</body>
+</html>

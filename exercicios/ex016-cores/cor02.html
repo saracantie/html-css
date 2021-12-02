@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        *{
+            height: 100%;
+        }
+        /*esse * é um seletor global das css*/
+        /*não se usa background color se quiser botar degrade no fundo, se usa:*/
+       body{
+           /*background-image: linear-gradient(to top, #4fffdc, #3fccb0, #3db577);*/
+          
+           background-image: radial-gradient(circle, #4fffdc, #3fccb0, #3db577);
+
+           /*background-image: linear-gradient(45deg, #647c77 1%, #3fccb0, #3db577 20%);*/
+           
+           background-attachment: fixed; /*esse tira aquela faixa no fim da pagina estranha qd vc rola o cursor*/
+       }
+
+    </style>
+</head>
+<body>
+    <h1>Testando Gradientes</h1>
+</body>
+</html>
